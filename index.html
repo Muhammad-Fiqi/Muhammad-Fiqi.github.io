@@ -38,6 +38,33 @@
                 transform: translateY(0);
             }
         }
+        .tran{
+            transition: 0.3s;
+        }
+        .trans {
+            transition: 0.3s;
+            position: absolute;
+        &::before, &::after{
+            content: '';
+            position: absolute;
+            background-image: radial-gradient(circle 20px at top left, transparent 95%, #171717) ;
+        }
+        &::before{
+            bottom: 40px;
+            right: -1px;
+            width: 20px;
+            height: 26px;
+        }
+        &::after{
+            bottom: -1px;
+            right: calc(100% + 2px);
+            width: 26px;
+            height: 20px;
+        }
+        &:hover{
+            width: 60%;
+        }
+        }
     </style>
 </head>
 <body class="bg-neutral-950 text-neutral-300 font-sans selection:bg-white selection:text-black">
@@ -85,9 +112,11 @@
         <div class="max-w-screen-xl mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div class="relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-neutral-600 to-neutral-800 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                    <div class="relative bg-neutral-950 border border-neutral-800 rounded-2xl h-96 flex items-center justify-center overflow-hidden">
+                    <div class="relative bg-neutral-950 rounded-2xl h-96 flex items-center justify-center overflow-hidden transition-transform duration-300">
                         <img class="w-full object-cover" src="./img/jabar 1.jpg" alt="foto_profil">
+                        <div class="w-[10%] h-[40px] group group-hover:w-[60%] bg-[#262626] rounded-2xl box-border border border-neutral-600 outline outline-[#171717] outline-[8px] bottom-0 right-0 grid place-items-center trans">
+                            <span class="w-[1.5ch] group-hover:w-full tracking-[2px] font-[600] text-nowrap overflow-hidden grid place-items-center tran">Muhammad Fiqi</span></span>
+                        </div>
                     </div>
                 </div>
 
