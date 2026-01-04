@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Fiqi</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        
+                        'charcoal': '#121212',
+                    }
+                }
+            }
+        }
+    </script>
+<body class="bg-neutral-950 w-screen h-screen text-center overflow-hidden">
+    <div class="flex flex-col justify-center items-center h-full w-[50%] mx-auto">
+        <h1 class="text-neutral-100 font-semibold text-[20px] uppercase w-[80%] md:w-full btn">Please select one of the portfolio pages you would like to view</h1>
+        <div class="mt-16 flex flex-col gap-4 w-full text-neutral-300">
+            <a href="./creative-designer/index.html" class="w-full h-12 leading-[48px] border border-neutral-700 text-white font-semibold rounded-full hover:bg-neutral-900 hover:border-white transition-colors duration-300 btn">CREATIVE DESIGNER</a>
+            <a href="./front-end/index.html" class="w-full h-12 leading-[48px] border border-neutral-700 text-white font-semibold rounded-full hover:bg-neutral-900 hover:border-white transition-colors duration-300 btn">FRONT END DEVELOPER</a>
+            <a href="./data-management/index.html" class="w-full h-12 leading-[48px] border border-neutral-700 text-white font-semibold rounded-full hover:bg-neutral-900 hover:border-white transition-colors duration-300 btn">DATA MANAGEMENT</a>
+        </div>
+    </div>
+
+
+<script>
+    anime({
+        targets: '.btn',
+        translateY: [30, 0],
+        opacity: [0, 1],
+        delay: anime.stagger(300),
+        duration: 1000,
+        easing: 'easeOutExpo'
+    });    
+</script>
+</body>
+</html>

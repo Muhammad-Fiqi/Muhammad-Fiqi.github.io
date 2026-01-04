@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Fiqi</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        
+                        'charcoal': '#121212',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .tran{
+            transition: 0.3s;
+        }
+        .trans {
+            transition: 0.3s;
+            position: absolute;
+        &::before, &::after{
+            content: '';
+            position: absolute;
+            background-image: radial-gradient(circle 20px at top left, transparent 95%, #171717) ;
+        }
+        &::before{
+            bottom: 40px;
+            right: -1px;
+            width: 20px;
+            height: 26px;
+        }
+        &::after{
+            bottom: -1px;
+            right: calc(100% + 2px);
+            width: 26px;
+            height: 20px;
+        }
+        &:hover{
+            width: 60%;
+        }
+        }
+    </style>
+</head>
+<body class="relative bg-neutral-950 text-neutral-300 font-sans selection:bg-white selection:text-black">
+    <nav class="fixed w-full z-50 top-0 start-0 border-b border-neutral-800 bg-neutral-950/80 backdrop-blur-md">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-xl font-bold whitespace-nowrap text-white tracking-tighter">MF.</span>
+            </a>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-neutral-800 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+                    <li><a href="#home" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-white md:p-0 hover:text-neutral-400 transition">Beranda</a></li>
+                    <li><a href="#about" class="block py-2 px-3 text-neutral-400 rounded hover:bg-neutral-800 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 transition">Tentang</a></li>
+                    <li><a href="#projects" class="block py-2 px-3 text-neutral-400 rounded hover:bg-neutral-800 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 transition">Proyek</a></li>
+                    <li><a href="#contact" class="block py-2 px-3 text-neutral-400 rounded hover:bg-neutral-800 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 transition">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="h-screen flex items-center justify-center relative overflow-hidden px-6">
+        <div class="absolute top-10 left-10 w-72 h-72 bg-neutral-800 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+        <div class="absolute bottom-10 right-10 w-72 h-72 bg-white rounded-full mix-blend-multiply filter blur-3xl opacity-5 animate-blob animation-delay-2000"></div>
+
+        <div class="text-center z-10 max-w-4xl fade-in-up">
+            <p class="text-neutral-500 text-sm md:text-base font-semibold tracking-widest uppercase mb-4">Portofolio Saya</p>
+            <h1 class="text-5xl md:text-8xl font-extrabold text-white tracking-tighter mb-6 leading-tight">
+                Muhammad Fiqi
+            </h1>
+            <p class="text-lg md:text-2xl text-neutral-400 mb-10 font-light max-w-2xl mx-auto">
+                Menciptakan pengalaman digital yang <span class="text-white font-semibold">simpel dan minimalis</span>, <span class="text-white font-semibold">fungsional</span>, dan berestetika modern.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#projects" class="px-8 py-3 bg-white text-black font-semibold rounded-full hover:bg-neutral-200 transition duration-300">
+                    Lihat Proyek Saya
+                </a>
+                <a href="#contact" class="px-8 py-3 border border-neutral-700 text-white font-semibold rounded-full hover:bg-neutral-900 hover:border-white transition duration-300">
+                    Hubungi Saya
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-neutral-900 border-t border-neutral-800">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="grid grid-cols-[428px,auto] max-md:grid-cols-1 gap-16 items-center">
+                <div class="relative h-full group max-xl:items-start">
+                    <div class="relative bg-neutral-950 rounded-2xl h-96 flex items-center justify-center overflow-hidden transition-transform duration-300">
+                        <img class="w-full h-full object-cover object-top" src="../img/formal2.webp" alt="foto_profil">
+                        <div class="w-[10%] h-[40px] group group-hover:w-[60%] bg-[#262626] rounded-2xl box-border border border-neutral-600 outline outline-[#171717] outline-[8px] bottom-0 right-0 grid place-items-center trans">
+                            <span class="w-[1.5ch] group-hover:w-full tracking-[2px] font-[600] text-nowrap overflow-hidden grid place-items-center tran">Muhammad Fiqi</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight">Tentang Saya</h2>
+                    <p class="text-neutral-400 mb-6 leading-relaxed">
+                        Halo, saya Muhammad Fiqi. Saya adalah seorang pengembang web dan desainer antarmuka yang menyukai kesederhanaan. Saya percaya bahwa desain yang baik adalah desain yang tidak terlihat rumit.
+                    </p>
+                    <p class="text-neutral-400 mb-8 leading-relaxed">
+                        Dengan dominasi warna monokrom, saya fokus pada struktur konten, tipografi yang rapi, dan performa website yang cepat.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-1.5 bg-neutral-800 text-neutral-300 text-sm rounded-full border border-neutral-700">HTML5</span>
+                        <span class="px-4 py-1.5 bg-neutral-800 text-neutral-300 text-sm rounded-full border border-neutral-700">Tailwind CSS</span>
+                        <span class="px-4 py-1.5 bg-neutral-800 text-neutral-300 text-sm rounded-full border border-neutral-700">JavaScript</span>
+                        <span class="px-4 py-1.5 bg-neutral-800 text-neutral-300 text-sm rounded-full border border-neutral-700">PHP</span>
+                        <span class="px-4 py-1.5 bg-neutral-800 text-neutral-300 text-sm rounded-full border border-neutral-700">UI/UX Design</span>
+                        <span class="px-4 py-1.5 bg-neutral-800 text-neutral-300 text-sm rounded-full border border-neutral-700">Editing Video</span>
+                        <span class="px-4 py-1.5 bg-neutral-800 text-neutral-300 text-sm rounded-full border border-neutral-700">Logo Design</span>
+                        <span class="px-4 py-1.5 bg-neutral-800 text-neutral-300 text-sm rounded-full border border-neutral-700">Design Graphic</span>
+                        <span class="px-4 py-1.5 bg-neutral-800 text-neutral-300 text-sm rounded-full border border-neutral-700">Motion Design</span>
+                        <span class="px-4 py-1.5 bg-neutral-800 text-neutral-300 text-sm rounded-full border border-neutral-700">Logo Animator</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-neutral-950">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">Karya Terpilih</h2>
+                <p class="text-neutral-500">Beberapa proyek logo yang telah saya kerjakan dengan dedikasi.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden hover:border-neutral-600 transition-all duration-300 hover:-translate-y-2">
+                    <div class="h-48 bg-neutral-800 flex items-center justify-center overflow-hidden">
+                         <img src="../img/1764504020817.jpeg" alt="Project 1" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">ERA CLOTH</h3>
+                        <p class="text-neutral-400 text-sm mb-4">ERA CLOTH logo bergaya flat geometri, minimalis dan simpel. Gunung dikiri melambangkan brand yang selalu grow up</p>
+                        <a href="#" class="inline-flex items-center text-white font-medium hover:underline decoration-neutral-500">Lihat Detail &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="group bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden hover:border-neutral-600 transition-all duration-300 hover:-translate-y-2">
+                    <div class="h-48 bg-neutral-800 flex items-center justify-center overflow-hidden">
+                        <img src="../img/1764504039883.jpeg" alt="Project 2" class="w-full h-full object-bottom opacity-80 group-hover:opacity-100 transition">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">POPPINS (normal & italic version)</h3>
+                        <p class="text-neutral-400 text-sm mb-4">Logo bergaya pixellate berbentuk wajah</p>
+                        <a href="#" class="inline-flex items-center text-white font-medium hover:underline decoration-neutral-500">Lihat Detail &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="group bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden hover:border-neutral-600 transition-all duration-300 hover:-translate-y-2">
+                    <div class="h-48 bg-neutral-800 flex items-center justify-center overflow-hidden">
+                        <img src="../img/WHITE EYE.jpg" alt="Project 3" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">WHITE EYE</h3>
+                        <p class="text-neutral-400 text-sm mb-4">Logo simple berbentuk burung White Eye</p>
+                        <a href="#" class="inline-flex items-center text-white font-medium hover:underline decoration-neutral-500">Lihat Detail &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-neutral-900 border-t border-neutral-800">
+        <div class="max-w-2xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight">Mari Bekerja Sama</h2>
+            <p class="text-neutral-400 mb-10 text-lg">
+                Tertarik untuk mendiskusikan proyek atau sekadar menyapa? Saya selalu terbuka untuk peluang baru.
+            </p>
+            
+            <a href="https://api.whatsapp.com/send?phone=6285704608723&text=Hello%2C%20I%20want%20more%20info%20about%20the%20product" class="inline-block px-10 py-4 bg-white text-black text-lg font-bold rounded-full hover:bg-neutral-200 transition transform hover:scale-105 shadow-lg shadow-white/10">
+                Kirim Pesan whatsapp
+            </a>
+
+            <div class="mt-12 flex justify-center space-x-8">
+                <a href="www.linkedin.com/in/muhammad-auliaur-rofiqi-774211321" class="text-neutral-500 hover:text-white transition">LinkedIn</a>
+                <a href="https://github.com/Muhammad-Fiqi" class="text-neutral-500 hover:text-white transition">GitHub</a>
+                <a href="https://www.instagram.com/muhammad_fiqi_85/" class="text-neutral-500 hover:text-white transition">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-neutral-950 py-8 border-t border-neutral-900">
+        <div class="max-w-screen-xl mx-auto px-6 text-center">
+            <p class="text-neutral-600 text-sm">
+                &copy; 2024 Muhammad Fiqi. Dibuat dengan <span class="text-neutral-400">Tailwind CSS</span>.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
