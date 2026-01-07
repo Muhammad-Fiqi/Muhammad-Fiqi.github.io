@@ -9,21 +9,7 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        
-                        'charcoal': '#121212',
-                    }
-                }
-            }
-        }
-    </script>
+
     
     <style>
         .fade-in-up {
@@ -85,19 +71,17 @@
     </nav>
 
     <section id="home" class="h-screen flex items-center justify-center relative overflow-hidden px-6">
-        <div class="absolute top-10 left-10 w-72 h-72 bg-neutral-800 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-        <div class="absolute bottom-10 right-10 w-72 h-72 bg-white rounded-full mix-blend-multiply filter blur-3xl opacity-5 animate-blob animation-delay-2000"></div>
-
+        <div class="absolute top-[calc(50%-192px)] left-[calc(50%-192px)] w-96 h-96 bg-white rounded-full filter blur-3xl opacity-[7%] animate-blob"></div>
         <div class="text-center z-10 max-w-4xl fade-in-up">
             <p class="text-neutral-500 text-sm md:text-base font-semibold tracking-widest uppercase mb-4">Creative Designer Portfolio</p>
-            <h1 class="text-5xl md:text-8xl font-extrabold text-white tracking-tighter mb-6 leading-tight">
+            <h1 class="text-5xl md:text-8xl font-extrabold text-white tracking-tighter mb-6 leading-tight max-md:text-4xl">
                 Muhammad Fiqi
             </h1>
             <p class="text-lg md:text-2xl text-neutral-400 mb-10 font-light max-w-2xl mx-auto">
                 Creative Designer dengan fokus pada <span class="text-white font-semibold">visual branding</span>, <span class="text-white font-semibold">konten digital</span>, dan <span class="text-white font-semibold">desain yang komunikatif</span>
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#projects" class="px-8 py-3 bg-white text-black font-semibold rounded-full hover:bg-neutral-200 transition duration-300">
+                <a href="#projects" class="px-8 py-3 bg-white text-black font-semibold rounded-full hover:shadow-[0_0_20px_-12px] hover:shadow-white transition-shadow duration-500">
                     Lihat Proyek Saya
                 </a>
                 <a href="#contact" class="px-8 py-3 border border-neutral-700 text-white font-semibold rounded-full hover:bg-neutral-900 hover:border-white transition duration-300">
@@ -127,7 +111,7 @@
                     Saya menguasai proses desain dari konsep, eksplorasi visual, hingga final output untuk berbagai kebutuhan seperti logo, konten media sosial, video pendek, dan aset digital lainnya.
                     </p>
 
-                    <div class="flex flex-wrap gap-2">
+                    <div class="flex flex-wrap gap-2 max-md:justify-center">
                         <span class="px-4 py-1.5 bg-neutral-800 text-neutral-300 text-sm rounded-full border border-neutral-700">Graphic Design</span>
                         <span class="px-4 py-1.5 bg-neutral-800 text-neutral-300 text-sm rounded-full border border-neutral-700">Logo Design</span>
                         <span class="px-4 py-1.5 bg-neutral-800 text-neutral-300 text-sm rounded-full border border-neutral-700">Brand Identity</span>
@@ -148,40 +132,38 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">Karya Terpilih</h2>
                 <p class="text-neutral-500">Beberapa proyek logo yang telah saya kerjakan dengan dedikasi.</p>
             </div>
-
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="group bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden hover:border-neutral-600 transition-all duration-300 hover:-translate-y-2">
-                    <div class="h-48 bg-[#ffdd59] flex items-center justify-center overflow-hidden">
-                         <img src="../img/1764504020817.jpeg" alt="Project 1" class="w-full h-full object-contain opacity-80 group-hover:opacity-100 transition">
+                <div class="group bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden hover:border-neutral-600 transition-all duration-300 hover:-translate-y-2 flex flex-col h-full">
+                    <div class="h-48 bg-[#ffdd59]">
+                        <img src="../img/1764504020817.jpeg" alt="Project 1" class="w-full h-full object-contain opacity-80 group-hover:opacity-100 transition">
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-1">
                         <h3 class="text-xl font-bold text-white mb-2">DESAIN LOGO</h3>
                         <p class="text-neutral-400 text-sm mb-4">Saya mahir dalam pembuatan logo simple modern bergaya geometri dengan ciri khas warna solid yang mempunyai filosofi dibalik kesederhanaanya</p>
-                        <a href="#" class="inline-flex items-center text-white font-medium hover:underline decoration-neutral-500">Lihat Detail &rarr;</a>
+                        <a href="#" class="inline-flex items-center text-white font-medium hover:underline decoration-neutral-500 mt-auto">Lihat Detail <span class="group-hover:translate-x-2 transition-transform ml-2">&rarr;</span></a>
                     </div>
                 </div>
-                
-                <div class="group bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden hover:border-neutral-600 transition-all duration-300 hover:-translate-y-2">
-                    <div class="h-48 bg-neutral-800 flex items-center justify-center overflow-hidden">
-                        <img src="../img/1764504039883.jpeg" alt="Project 2" class="w-full h-full object-bottom opacity-80 group-hover:opacity-100 transition">
+                <div class="group bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden hover:border-neutral-600 transition-all duration-300 hover:-translate-y-2 flex flex-col h-full">
+                    <div class="h-48 bg-[#ffdd59]">
+                        <img src="../img/1764504020817.jpeg" alt="Project 1" class="w-full h-full object-contain opacity-80 group-hover:opacity-100 transition">
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">POPPINS (normal & italic version)</h3>
-                        <p class="text-neutral-400 text-sm mb-4">Logo bergaya pixellate berbentuk wajah</p>
-                        <a href="#" class="inline-flex items-center text-white font-medium hover:underline decoration-neutral-500">Lihat Detail &rarr;</a>
+                    <div class="p-6 flex flex-col flex-1">
+                        <h3 class="text-xl font-bold text-white mb-2">DESAIN GRAFIS</h3>
+                        <p class="text-neutral-400 text-sm mb-4">Membuat berbagai desain Pamflet, Banner, Poster, Cover, Mockup, Thumbnail dan desain grafis lainya adalah keahlian saya</p>
+                        <a href="#" class="inline-flex items-center text-white font-medium hover:underline decoration-neutral-500 mt-auto">Lihat Detail <span class="group-hover:translate-x-2 transition-transform ml-2">&rarr;</span></a>
+                    </div>
+                </div>
+                <div class="group bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden hover:border-neutral-600 transition-all duration-300 hover:-translate-y-2 flex flex-col h-full">
+                    <div class="h-48 bg-[#ffdd59]">
+                        <img src="../img/1764504020817.jpeg" alt="Project 1" class="w-full h-full object-contain opacity-80 group-hover:opacity-100 transition">
+                    </div>
+                    <div class="p-6 flex flex-col flex-1">
+                        <h3 class="text-xl font-bold text-white mb-2">VIDEO EDITING</h3>
+                        <p class="text-neutral-400 text-sm mb-4">Mulai dari Motion Grafis, Motion Design, Video Editing, visual effect bisa saya kreasikan dengan kreatif sesuai dengan nuansa yang diinginkan</p>
+                        <a href="#" class="inline-flex items-center text-white font-medium hover:underline decoration-neutral-500 mt-auto">Lihat Detail <span class="group-hover:translate-x-2 transition-transform ml-2">&rarr;</span></a>
                     </div>
                 </div>
 
-                <div class="group bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden hover:border-neutral-600 transition-all duration-300 hover:-translate-y-2">
-                    <div class="h-48 bg-neutral-800 flex items-center justify-center overflow-hidden">
-                        <img src="../img/WHITE EYE.jpg" alt="Project 3" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">WHITE EYE</h3>
-                        <p class="text-neutral-400 text-sm mb-4">Logo simple berbentuk burung White Eye</p>
-                        <a href="#" class="inline-flex items-center text-white font-medium hover:underline decoration-neutral-500">Lihat Detail &rarr;</a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -212,6 +194,6 @@
             </p>
         </div>
     </footer>
-
+    <script src="../src/script.js"></script>
 </body>
 </html>
