@@ -6,11 +6,8 @@
     <title>Muhammad Fiqi</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
-    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    
-
-    
+    <link rel="stylesheet" href="../src/style.css">
     <style>
         .fade-in-up {
             animation: fadeInUp 0.8s ease-out forwards;
@@ -127,10 +124,10 @@
         </div>
     </section>
     <section id="projects" class="py-24 bg-neutral-950">
-        <div class="max-w-screen-xl mx-auto px-6">
+        <div class="max-w-screen-xl mx-auto px-6 flex flex-col gap-12">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">Karya Terpilih</h2>
-                <p class="text-neutral-500">Beberapa proyek logo yang telah saya kerjakan dengan dedikasi.</p>
+                <p class="text-neutral-500">Beberapa proyek yang telah saya kerjakan dengan dedikasi.</p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="group bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden hover:border-neutral-600 transition-all duration-300 hover:-translate-y-2 flex flex-col h-full">
@@ -140,7 +137,9 @@
                     <div class="p-6 flex flex-col flex-1">
                         <h3 class="text-xl font-bold text-white mb-2">DESAIN LOGO</h3>
                         <p class="text-neutral-400 text-sm mb-4">Saya mahir dalam pembuatan logo simple modern bergaya geometri dengan ciri khas warna solid yang mempunyai filosofi dibalik kesederhanaanya</p>
-                        <a href="#" class="inline-flex items-center text-white font-medium hover:underline decoration-neutral-500 mt-auto">Lihat Detail <span class="group-hover:translate-x-2 transition-transform ml-2">&rarr;</span></a>
+                        <div>
+                            <button class="btn inline-flex items-center text-white font-medium hover:underline decoration-neutral-500 mt-auto" data-target="#box1">Lihat Detail <span class="group-hover:translate-x-2 transition-transform ml-2">&rarr;</span></button>
+                        </div>
                     </div>
                 </div>
                 <div class="group bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden hover:border-neutral-600 transition-all duration-300 hover:-translate-y-2 flex flex-col h-full">
@@ -150,7 +149,9 @@
                     <div class="p-6 flex flex-col flex-1">
                         <h3 class="text-xl font-bold text-white mb-2">DESAIN GRAFIS</h3>
                         <p class="text-neutral-400 text-sm mb-4">Membuat berbagai desain Pamflet, Banner, Poster, Cover, Mockup, Thumbnail dan desain grafis lainya adalah keahlian saya</p>
-                        <a href="#" class="inline-flex items-center text-white font-medium hover:underline decoration-neutral-500 mt-auto">Lihat Detail <span class="group-hover:translate-x-2 transition-transform ml-2">&rarr;</span></a>
+                        <div>
+                            <button class="btn inline-flex items-center text-white font-medium hover:underline decoration-neutral-500 mt-auto" data-target="#box2">Lihat Detail <span class="group-hover:translate-x-2 transition-transform ml-2">&rarr;</span></button>
+                        </div>
                     </div>
                 </div>
                 <div class="group bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden hover:border-neutral-600 transition-all duration-300 hover:-translate-y-2 flex flex-col h-full">
@@ -160,10 +161,23 @@
                     <div class="p-6 flex flex-col flex-1">
                         <h3 class="text-xl font-bold text-white mb-2">VIDEO EDITING</h3>
                         <p class="text-neutral-400 text-sm mb-4">Mulai dari Motion Grafis, Motion Design, Video Editing, visual effect bisa saya kreasikan dengan kreatif sesuai dengan nuansa yang diinginkan</p>
-                        <a href="#" class="inline-flex items-center text-white font-medium hover:underline decoration-neutral-500 mt-auto">Lihat Detail <span class="group-hover:translate-x-2 transition-transform ml-2">&rarr;</span></a>
+                        <div>
+                            <button class="btn inline-flex items-center text-white font-medium hover:underline decoration-neutral-500 mt-auto" data-target="#box3">Lihat Detail <span class="group-hover:translate-x-2 transition-transform ml-2">&rarr;</span></button>
+                        </div>
                     </div>
                 </div>
 
+            </div>
+            <div class="containers">
+                <div id="box1" class="box relative bg-neutral-900 rounded-lg border border-neutral-800 p-12 h-[1000px]">
+                    <button class="close-btn h-8 w-8 bg-neutral-800 hover:bg-neutral-700 text-neutral-400 hover:text-neutral-200 font-extrabold rounded-lg border border-neutral-700 hover:border-neutral-600 absolute top-1 right-1 shadow-sm transition-colors duration-300">X</button>
+                </div>
+                <div id="box2" class="box relative bg-neutral-900 rounded-lg border border-neutral-800 p-12 h-[1000px]">
+                    <button class="close-btn h-8 w-8 bg-neutral-800 hover:bg-neutral-700 text-neutral-400 hover:text-neutral-200 font-extrabold rounded-lg border border-neutral-700 hover:border-neutral-600 absolute top-1 right-1 shadow-sm transition-colors duration-300">X</button>
+                </div>
+                <div id="box3" class="box relative bg-neutral-900 rounded-lg border border-neutral-800 p-12 h-[1000px]">
+                    <button class="close-btn h-8 w-8 bg-neutral-800 hover:bg-neutral-700 text-neutral-400 hover:text-neutral-200 font-extrabold rounded-lg border border-neutral-700 hover:border-neutral-600 absolute top-1 right-1 shadow-sm transition-colors duration-300">X</button>
+                </div>
             </div>
         </div>
     </section>
@@ -194,6 +208,7 @@
             </p>
         </div>
     </footer>
+    <script src="../src/jquery.min.js"></script>
     <script src="../src/script.js"></script>
 </body>
 </html>
