@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/css">
+        @media print {
+            body * { visibility: hidden; padding: 0; }
+            .a4-container, .a4-container * { visibility: visible; }
+            .a4-container { position: absolute; left: 0; top: 0; width: 100%; }
+            .no-print { display: none !important; }
+        }
+        @page {
+            size: A4;
+            margin: 0;
+        }
+    </style>
+</head>
+<body class="bg-neutral-300 py-10 font-sans text-slate-800">
+    <button class="no-print mx-auto w-full h-[40px] text-white mb-6 bg-neutral-800 hover:bg-neutral-700 transition-colors duration-300" id="printBtn">DOWNLOAD RESUME UKURAN A4</button>
+
+    <div class="a4-container mx-auto w-[210mm] h-[297mm] bg-white p-[40px_50px] shadow-2xl overflow-hidden">
+        
+        <header class="flex items-center mb-4">
+            <div class="header-text">
+                <h1 class="text-2xl font-bold tracking-wider uppercase">MUHAMMAD FIQI, <span class="text-[18px] font-semibold">Creative Designer</span></h1>
+                <p class="text-sm text-gray-600 mt-1">
+                    Jl. Pare - Kandangan, 64293 Kab. Kediri, Indonesia &bull; muhammadfiqi85@gmail.com
+                </p>
+            </div>
+        </header>
+
+        <section class="flex py-[12px] border-t-2 border-slate-900">
+            <div class="w-[180px] font-bold text-[14px] uppercase shrink-0">Professional Summary</div>
+            <div class="flex-grow text-[13px] ml-[20px] text-justify leading-relaxed">
+                Creative and detail-oriented designer with hands-on experience in graphic design,
+                video editing, UI visual design, and social media content management. Skilled in
+                translating ideas and concepts into compelling visual outputs that align with branding
+                and communication goals. Possesses strong analytical thinking, adaptability, and the
+                ability to collaborate effectively in project-based environments.
+            </div>
+        </section>
+
+        <section class="flex py-[12px] border-t-2 border-slate-900">
+            <div class="w-[180px] font-bold text-[14px] uppercase shrink-0">Work Experience</div>
+            <div class="flex-grow text-[13px]">
+                <div class="flex justify-between mb-5">
+                    <div class="w-[150px] text-gray-500 shrink-0 italic">Jul 2021 — Oct 2024</div>
+                    <div class="flex-grow pr-4">
+                        <h3 class="font-bold mb-1 text-[14px]">Front-End & UI Web Handler, Sirojul Ulum Islamic Boarding School</h3>
+                        <ul class="list-disc ml-5 space-y-1 text-gray-700">
+                            <li>Designed and managed website user interfaces aligned with usability principles.</li>
+                            <li>Converted UI designs from Figma into functional front-end code.</li>
+                            <li>Conducted website testing to identify bugs and usability issues.</li>
+                            <li>Collaborated in requirement analysis to ensure system features met user needs.</li>
+                        </ul>
+                    </div>
+                    <div class="text-right text-gray-500 w-[60px] shrink-0">Indonesia</div>
+                </div>
+
+                <div class="flex justify-between">
+                    <div class="w-[150px] text-gray-500 shrink-0 italic">Jul 2021 — Oct 2024</div>
+                    <div class="flex-grow pr-4">
+                        <h3 class="font-bold mb-1 text-[14px]">Graphic Designer, Video Editor & Social Media Manager, Sirojul Ulum Islamic Boarding School</h3>
+                        <ul class="list-disc ml-5 space-y-1 text-gray-700">
+                            <li>Designed digital visuals for social media and promotional needs.</li>
+                            <li>Edited videos for informational and branding purposes.</li>
+                            <li>Managed content scheduling and platform optimization.</li>
+                            <li>Analyzed engagement and performance to improve content effectiveness.</li>
+                        </ul>
+                    </div>
+                    <div class="text-right text-gray-500 w-[60px] shrink-0">Indonesia</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex py-[12px] border-t-2 border-slate-900">
+            <div class="w-[180px] font-bold text-[14px] uppercase shrink-0">Education</div>
+            <div class="flex-grow text-[13px]">
+                <div class="flex justify-between">
+                    <div class="w-[150px] text-gray-500 shrink-0 italic">Jul 2024 — Jul 2028</div>
+                    <div class="flex-grow">
+                        <h3 class="font-bold text-[14px]">Bachelor of Informatics Engineering, University of Hasyim Asyari Jombang</h3>
+                    </div>
+                    <div class="text-right text-gray-500 w-[100px] shrink-0">Indonesia</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex py-[12px] border-t-2 border-slate-900">
+            <div class="w-[180px] font-bold text-[14px] uppercase shrink-0">Skills</div>
+            <div class="flex-grow grid grid-cols-2 gap-x-10 gap-y-2 text-[13px]">
+                <div class="flex justify-between border-b border-gray-100 pb-0.5"><span>Adobe Creative Suite</span> <span class="text-gray-400 italic">Advanced</span></div>
+                <div class="flex justify-between border-b border-gray-100 pb-0.5"><span>Video production</span> <span class="text-gray-400 italic">Intermediate</span></div>
+                <div class="flex justify-between border-b border-gray-100 pb-0.5"><span>Motion graphics</span> <span class="text-gray-400 italic">Advanced</span></div>
+                <div class="flex justify-between border-b border-gray-100 pb-0.5"><span>Content creation</span> <span class="text-gray-400 italic">Advanced</span></div>
+                <div class="flex justify-between border-b border-gray-100 pb-0.5"><span>Graphic Design</span> <span class="text-gray-400 italic">Advanced</span></div>
+                <div class="flex justify-between border-b border-gray-100 pb-0.5"><span>User interface design</span> <span class="text-gray-400 italic">Advanced</span></div>
+                <div class="flex justify-between border-b border-gray-100 pb-0.5"><span>Responsive design</span> <span class="text-gray-400 italic">Expert</span></div>
+                <div class="flex justify-between border-b border-gray-100 pb-0.5"><span>HTML/CSS</span> <span class="text-gray-400 italic">Expert</span></div>
+            </div>
+        </section>
+
+        <section class="flex py-[12px] border-t-2 border-slate-900">
+            <div class="w-[180px] font-bold text-[14px] uppercase shrink-0">Languages</div>
+            <div class="flex-grow grid grid-cols-2 gap-x-10 text-[13px]">
+                <div class="flex justify-between border-b border-gray-100 pb-0.5"><span>Indonesia</span> <span class="text-gray-400 italic">Native</span></div>
+                <div class="flex justify-between border-b border-gray-100 pb-0.5"><span>English</span> <span class="text-gray-400 italic">A2 - Pre-intermediate</span></div>
+            </div>
+        </section>
+
+        <section class="flex py-[12px] border-y-2 border-slate-900 mt-2">
+            <div class="w-[180px] font-bold text-[14px] uppercase shrink-0">Links</div>
+            <div class="flex-grow text-[13px]">
+                <a href="https://muhammad-fiqi.github.io/" target="_blank" class="underline hover:text-blue-600 transition-colors">Portfolio Website</a>
+            </div>
+        </section>
+    </div>
+    <script>
+    document.getElementById('printBtn').addEventListener('click', () => window.print());
+    </script>
+</body>
+</html>
