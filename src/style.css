@@ -1,4 +1,55 @@
+/* creative designer styles */
 .box {
   display: none;
   margin-bottom: 10px;
+}
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.tran{
+    transition: 0.3s;
+}
+.trans {
+    transition: 0.3s;
+    position: absolute;
+&::before, &::after{
+    content: '';
+    position: absolute;
+    background-image: radial-gradient(circle 20px at top left, transparent 95%, #171717) ;
+}
+&::before{
+    bottom: 40px;
+    right: -1px;
+    width: 20px;
+    height: 26px;
+}
+&::after{
+    bottom: -1px;
+    right: calc(100% + 2px);
+    width: 26px;
+    height: 20px;
+}
+&:hover{
+    width: 60%;
+}
+}
+/* Resume Designer.html styles */
+@media print {
+    body * { visibility: hidden; padding: 0; }
+    .a4-container, .a4-container * { visibility: visible; }
+    .a4-container { position: absolute; left: 0; top: 0; width: 100%; }
+    .no-print { display: none !important; }
+}
+@page {
+    size: A4;
+    margin: 0;
 }

@@ -11,7 +11,7 @@ tailwind.config = {
         }
     }
 }
-
+// Creative Designer Script
 $('.btn').on('click', function () {
   const target = $(this).data('target');
 

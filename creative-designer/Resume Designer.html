@@ -5,18 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creative Designer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style type="text/css">
-        @media print {
-            body * { visibility: hidden; padding: 0; }
-            .a4-container, .a4-container * { visibility: visible; }
-            .a4-container { position: absolute; left: 0; top: 0; width: 100%; }
-            .no-print { display: none !important; }
-        }
-        @page {
-            size: A4;
-            margin: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="/src/style.css">
 </head>
 <body class="bg-neutral-300 py-10 font-sans text-slate-800">
     <button class="no-print mx-auto w-full h-[40px] text-white mb-6 bg-neutral-800 hover:bg-neutral-700 transition-colors duration-300" id="printBtn">DOWNLOAD RESUME UKURAN A4</button>
@@ -119,7 +108,7 @@
         </section>
     </div>
     <script>
-    document.getElementById('printBtn').addEventListener('click', () => window.print());
+        document.getElementById('printBtn').addEventListener('click', () => window.print());
     </script>
 </body>
 </html>
